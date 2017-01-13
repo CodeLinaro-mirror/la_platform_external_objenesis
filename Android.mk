@@ -58,6 +58,8 @@ LOCAL_SRC_FILES := $(call all-java-files-under, tck/src)
 LOCAL_JAVA_RESOURCE_DIRS := tck/src
 include $(BUILD_STATIC_JAVA_LIBRARY)
 
+include $(call all-makefiles-under, $(LOCAL_PATH))
+
 # -------------------------------
 # Builds the deployable Objenesis TCK for Android
 # To build and run:
